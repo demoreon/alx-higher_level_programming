@@ -9,7 +9,7 @@ import requests
 if __name__ == "__main__":
     link = sys.argv[1]
 
-    res = requests.get(url)
+    res = requests.get(link)
     if res.status_code >= 400:
         print("Error code: {}".format(res.status_code))
     else:
