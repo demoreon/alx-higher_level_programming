@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Python script that takes your GitHub credentials (username and password) """
+"""Python script that takes your GitHub credentials """
 
 
 import sys
