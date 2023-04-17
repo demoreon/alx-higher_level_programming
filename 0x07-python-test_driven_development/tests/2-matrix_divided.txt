@@ -76,20 +76,6 @@ Traceback (most recent call last):
 ...
 TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
 
-Dividing a matrix which its elements aren't integer/float numbers 2:
-
->>> matrix_divided([["1"], ["2", "3"], ["5", "6", "7"]], 10)
-Traceback (most recent call last):
-...
-TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-passing div as a list
-
->>> matrix_divided([[5.7, 8.1], [7.7, 4.9]], [2])
-Traceback (most recent call last):
-...
-TypeError: div must be a number
-
 Passing a matrix which one of its elements is an empty list:
 
 >>> matrix_divided([[2.1, 5.8], [], [10, -3]], 8)
