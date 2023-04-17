@@ -29,14 +29,8 @@ def matrix_divided(matrix, div):
         if len(rows) != len(matrix[0]):
             raise TypeError(msg_size)
 
-        new = []
         for item in rows:
             if not isinstance(item, (int, float)):
                 raise TypeError(msg_list)
-            if item == float('inf') or item == -float('inf') or item != item:
-                new.append(10.0)
-        new_matrix.append(new)
-    if div == float('inf') or div == -float('inf') or div != div:
-        div = 10
-    mat = [[round(y/div, 2) for y in rows] for rows in new_matrix]
+        mat = [[round(y/div, 2) for y in rows] for rows in matrix]
     return (mat)
