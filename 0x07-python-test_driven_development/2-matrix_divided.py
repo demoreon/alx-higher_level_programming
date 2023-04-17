@@ -20,6 +20,7 @@ def matrix_divided(matrix, div):
     if not isinstance(matrix, list):
         raise TypeError(msg_list)
 
+    new_matrix = []
     for rows in matrix:
         if not isinstance(rows, list):
             raise TypeError(msg_list)
@@ -27,11 +28,15 @@ def matrix_divided(matrix, div):
             raise TypeError(msg_list)
         if len(rows) != len(matrix[0]):
             raise TypeError(msg_size)
-        if div == float('inf') or div == -float('inf') or div != div:
-            div = 10
 
-        for element in rows:
-            if not isinstance(element, (int, float)):
+        new = []
+        for item in rows:
+            if not isinstance(item, (int, float)):
                 raise TypeError(msg_list)
-    mat = [[round(y/div, 2) for y in rows] for rows in matrix]
+            if item == float('inf') or item == -float('inf') or item != item:
+                new.append(10.0)
+        new_matrix.append(new)
+    if div == float('inf') or div == -float('inf') or div != div:
+        div = 10
+    mat = [[round(y/div, 2) for y in rows] for rows in new_matrix]
     return (mat)
