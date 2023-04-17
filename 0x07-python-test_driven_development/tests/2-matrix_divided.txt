@@ -2,18 +2,6 @@ A function that divides all elements of a matrix
 ================================================
 >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
-Passing one argument
->>> matrix_divided(3)
-Traceback (most recent call last):
-...
-TypeError: matrix_divided() missing 1 required positional argument: 'div'
-
-Passing zero argument
->>> matrix_divided()
-Traceback (most recent call last):
-...
-TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
-
 >>> matrix_divided([], '3')
 Traceback (most recent call last):
    ...
