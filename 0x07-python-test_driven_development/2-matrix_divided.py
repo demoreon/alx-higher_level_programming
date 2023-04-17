@@ -4,7 +4,6 @@ A Module contains one function that outputs a new matrix.
 
 """
 
-
 def matrix_divided(matrix, div):
     """ A Module contains one function that outputs a new matrix. """
 
