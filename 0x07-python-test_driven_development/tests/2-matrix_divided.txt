@@ -82,6 +82,3 @@ Passing a matrix which one of its elements is an empty list:
 Traceback (most recent call last):
 ...
 TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-Passing a matrix which one of its elements is a tuple:
-
