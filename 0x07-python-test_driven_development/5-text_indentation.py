@@ -9,12 +9,11 @@ This module features a function to prints identation
 def text_indentation(text):
     """ Function that prints indentation """
 
-
     delimiters = ".:?"
     if type(text) is not str:
         raise TypeError('text must be a string')
 
-    #lines = new.replace(delim, delim + '*')
+# lines = new.replace(delim, delim + '*')
     new = text
 
     for delim in ".:?":
@@ -31,5 +30,4 @@ def text_indentation(text):
 
     print(new[:-3], end='')
 
-    # Example usage
-#text_indentation("Betty: Holberton? Python is. cool ")
+# text_indentation("Betty: Holberton? Python is. cool ")
