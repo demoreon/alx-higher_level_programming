@@ -26,5 +26,5 @@ def text_indentation(text):
                     print(ln, end='')
                 else:
                     print(ln, end="\n\n")
-            else:
-                print(line.lstrip().rstrip(), end="\n\n")
+        else:
+            print(line.lstrip().rstrip(), end="\n\n")
