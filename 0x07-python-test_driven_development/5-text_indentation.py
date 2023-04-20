@@ -9,18 +9,22 @@ This module features a function to prints identation
 def text_indentation(text):
     """ Function that prints indentation """
 
+    delimiters = ['.', ':', '?']
     if type(text) is not str:
         raise TypeError('text must be a string')
 
-    after_new_line = False
-    for c in text:
-        if after_new_line:
-            if c == " ":
-                continue
-            after_new_line = False
-        if c == '.' or c == '?' or c == ':':
-            print(c)
-            print("")
-            after_new_line = True
-        else:
-            print(c, end="")
+    for delim in delimiters:
+        text = text.replace(delim, delim + '*')
+
+    lines = text.split('*')
+
+    for line in lines:
+        if line == lines[-1]:
+            line = line.lstrip().rstrip()
+            for ln in line:
+                if ln not in delimiters:
+                    print(ln, end='')
+                else:
+                    print(ln, end="\n\n")
+            else:
+                print(line.lstrip().rstrip(), end="\n\n")
