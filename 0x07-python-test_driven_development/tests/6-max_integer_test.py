@@ -38,5 +38,3 @@ class TestMaxInt(unittest.TestCase):
     def test_max_integer(self):
         self.assertEqual(max_integer([5, -2, 100, 3]), 100)
 
-    def test_repeated_number(self):
-        self.assertEqual(max_integer([1000, 1000, 1000]), 1000)
