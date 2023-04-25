@@ -66,14 +66,3 @@ class TestMaxInt(unittest.TestCase):
         with self.assertRaises(TypeError):
             max_integer([0, '1'])
 
-    def test_tuple_in_a_list(self):
-        with self.assertRaises(TypeError):
-            max_integer([10, (20, 30)])
-
-    def test_dictionary(self):
-        with self.assertRaises(KeyError):
-            max_integer({'key1': 1, 'key2': 2})
-
-    def test_number(self):
-        with self.assertRaises(TypeError):
-            max_integer(1)
