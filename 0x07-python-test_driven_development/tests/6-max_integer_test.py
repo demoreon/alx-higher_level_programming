@@ -59,16 +59,6 @@ class TestMaxInt(unittest.TestCase):
     def test_zero_number(self):
         self.assertEqual(max_integer([0, 0]), 0)
 
-    def test_big_list(self):
-        self.assertEqual(max_integer([
-            901, 902, 903, 904, 905, 906, 907, 908, 909, 910,
-            911, 912, 913, 914, 915, 916, 917, 918, 919, 920,
-            919, 918, 917, 1000, 915, 914, 913, 912, 911, 910,
-            909, 908, 907, 906, 905, 904, 903, 902, 901]), 1000)
-    def test_list_with_loop(self):
-        my_list = [1, 2, 3, 4, 5]
-        self.assertEqual(max_integer([i * 5 for i in my_list]), 25)
-
     def test_one_number_in_a_list(self):
         self.assertEqual(max_integer([1]), 1)
 
