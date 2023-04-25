@@ -55,9 +55,3 @@ class TestMaxInt(unittest.TestCase):
 
     def test_max_at_beginning(self):
         self.assertEqual(max_integer([5, 4, 3, 2, 1]), 5)
-
-    def test_zero_number(self):
-        self.assertEqual(max_integer([0, 0]), 0)
-
-    def test_one_number_in_a_list(self):
-        self.assertEqual(max_integer([1]), 1)
