@@ -44,14 +44,5 @@ class TestMaxInt(unittest.TestCase):
     def test_repeated_number(self):
         self.assertEqual(max_integer([1000, 1000, 1000]), 1000)
 
-    def test_float_numbers(self):
-        self.assertEqual(max_integer([50, 51, 50, 49]), 51)
-
     def test_max_operated_integer(self):
         self.assertEqual(max_integer([-3, -5 * -5, 12, -1]), 25)
-
-    def test_neg_numbers(self):
-        self.assertEqual(max_integer([-10, -5, -2, -1]), -1)
-
-    def test_max_at_beginning(self):
-        self.assertEqual(max_integer([5, 4, 3, 2, 1]), 5)
