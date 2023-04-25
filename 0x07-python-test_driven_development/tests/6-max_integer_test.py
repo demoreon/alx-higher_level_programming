@@ -24,6 +24,9 @@ class TestMaxInt(unittest.TestCase):
     def test_oneElement(self):
         self.assertEqual(max_integer([9, 92]), 92)
 
+    def test_oneElement(self):
+        self.assertEqual(max_integer([9, 92, -2]), 92)
+
     def test_twoElement(self):
         self.assertEqual(max_integer([2]), 2)
 
