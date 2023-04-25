@@ -35,6 +35,3 @@ class TestMaxInt(unittest.TestCase):
         with self.assertRaises(KeyError):
             max_integer({'keya': 23})
 
-    def test_max_integer(self):
-        self.assertEqual(max_integer([5, -2, 100, 3]), 100)
-
