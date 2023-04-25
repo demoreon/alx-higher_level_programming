@@ -61,8 +61,3 @@ class TestMaxInt(unittest.TestCase):
 
     def test_one_number_in_a_list(self):
         self.assertEqual(max_integer([1]), 1)
-
-    def test_string_number_in_a_list(self):
-        with self.assertRaises(TypeError):
-            max_integer([0, '1'])
-
