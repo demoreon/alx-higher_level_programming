@@ -30,3 +30,7 @@ class TestMaxInt(unittest.TestCase):
     def test_mixed(self):
         with self.assertRaises(TypeError):
             max_integer[3, (5, 5)]
+
+    def test_dict(self):
+        with self.assertRaises(KeyError):
+            max_integer({'keya':23})
