@@ -6,7 +6,7 @@ import unittest
 max_integer = __import__('6-max_integer').max_integer
 
 
-Class TestMaxInt(unittest.TestCase):
+class TestMaxInt(unittest.TestCase):
     """ The class that houses all the test cases """
     def test_emptyList(self):
         self.assertEqual(max_integer([]), None)
@@ -30,6 +30,3 @@ Class TestMaxInt(unittest.TestCase):
     def test_mixed(self):
         with self.assertRaises(TypeError):
             max_integer[3, (5, 5)]
-
-    def test_emptyList(self):
-        self.assertEqual(max_integer[], None)

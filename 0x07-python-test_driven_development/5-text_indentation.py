@@ -13,21 +13,14 @@ def text_indentation(text):
     if type(text) is not str:
         raise TypeError('text must be a string')
 
-# lines = new.replace(delim, delim + '*')
-    new = text
-
-    for delim in ".:?":
-        lines = new.split(delim)
-        new = ""
-
+    newT = text
+    for delim in delimiters:
+        lines =  newT.split(delim)
+        newT = ""
         for line in lines:
             line = line.strip(" ")
-
-            if new is "":
-                new = line + delim
+            if newT == "":
+                newT = line + delim
             else:
-                new += "\n\n" + line + delim
-
-    print(new[:-3], end='')
-
-# text_indentation("Betty: Holberton? Python is. cool ")
+                newT += "\n\n" + line + delim
+    print(newT[:-3], end='')
