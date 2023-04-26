@@ -2,8 +2,8 @@
 
 const req = require('request');
 const i_d = process.argv[2];
-const link_url = 'https://swapi-api.hbtn.io/api/films/';
-req.get(link_url + i_d, function (error, res, body) {
+const URL = 'https://swapi-api.hbtn.io/api/films/';
+req.get(URL + i_d, function (error, res, body) {
   if (error) {
     console.log(error);
   }
